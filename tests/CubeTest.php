@@ -4,20 +4,23 @@ include_once('src/Cube.php');
 class CubeTest extends \PHPUnit_Framework_TestCase
 {
     protected $object;
+    private $side = 5;
 
     protected function setUp()
     {
-        $this->object = new Shapes\Cube(5);
+        $this->object = new Shapes\Cube($this->side);
     }
 
     public function testArea()
     {
-        $this->assertEquals(150, $this->object->area());
+        $cubeArea = 6 * pow($this->side, 2);
+        $this->assertEquals($cubeArea, $this->object->area());
     }
 
     public function testVolume()
     {
-        $this->assertEquals(125, $this->object->volume());
+        $cubeVolume = pow($this->side, 3);
+        $this->assertEquals($cubeVolume, $this->object->volume());
     }
 
 
