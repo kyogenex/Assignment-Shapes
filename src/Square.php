@@ -39,14 +39,4 @@ class Square implements ShapeInterface
         return 4 * $this->side;
     }
 
-
-    /**
-     * Get the volume
-     *
-     * @return int
-     */
-    public function volume()
-    {
-        return 0;
-    }
 }

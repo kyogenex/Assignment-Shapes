@@ -31,7 +31,7 @@ class Calculator
     {
         $total = 0;
         foreach ($shapes as $shape) {
-            if (is_object($shape))
+            if (is_object($shape) && method_exists($shape, 'volume'))
                 $total += $shape->volume();
         }
         return $total;

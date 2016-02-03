@@ -3,8 +3,9 @@
 namespace Shapes;
 
 include_once('ShapeInterface.php');
+include_once('ThreeDimensionalShapeInterface.php');
 
-class Cube implements ShapeInterface
+class Cube implements ShapeInterface, ThreeDimensionalShapeInterface
 {
 
     protected $side;

@@ -20,11 +20,4 @@ interface ShapeInterface
      */
     public function perimeter();
 
-    /**
-     * Get the volume
-     *
-     * @return int
-     */
-    public function volume();
-
 }

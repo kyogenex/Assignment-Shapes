@@ -40,13 +40,4 @@ class Circle implements ShapeInterface
         return 2 * pi() * $this->radius;
     }
 
-    /**
-     * Get the volume
-     *
-     * @return int
-     */
-    public function volume()
-    {
-        return 0;
-    }
 }
